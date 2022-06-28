@@ -8,3 +8,4 @@ console.log(vetor);
 vetor.pop();
 console.log(vetor.pop());
 console.log(vetor);
+console.log(vetor.length);
