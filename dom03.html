@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM02</title>
+  </head>
+  <body>
+    <h1>Me mude B com JS, pfvr !!</h1>
+    <div>A: <span> 3 </span></div>
+    <div>B: <span> 2 </span></div>
+    <div>A+B <span> ? </span></div>
+    <script>
+      //busca uma referencia para o primeiro elemento
+      const eSpans = document.querySelectorAll("span"); // all traz todos dentro de um vetor
+      const eA = eSpans[0];
+      const eB = eSpans[1];
+      const eS = eSpans[2];
+      //opera os dadeos
+      const A = Number(eA.textContent);
+      const B = Number(eB.textContent);
+      const S = A + B;
+
+      //escreve na saida
+      eS.textContent = S;
+    </script>
+  </body>
+</html>
