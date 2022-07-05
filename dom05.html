@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM05</title>
+  </head>
+  <body>
+    <h1>DOM05</h1>
+    <ul></ul>
+    <script>
+      //busca uma referencia para o primeiro elemento
+      const eUL = document.querySelector("ul");
+
+      //opera os dadeos
+      for (let i = 0; i < 5; i++) {
+        const numero = 7 + i;
+        const eLi = document.createElement("li");
+        eLi.textContent = numero;
+        eUL.appendChild(eLi);
+      }
+      //escreve na saida
+    </script>
+  </body>
+</html>
