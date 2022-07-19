@@ -1,6 +1,7 @@
 function criaElemento(cor, altura, largura){
     const eNovo = document.createElement("div");
     eNovo.textContent = `${cor} ${altura} ${largura} ${altura+largura}`;
+    eNovo.style = `color: ${cor}`;
     document.body.appendChild(eNovo);
 }
 document.exm01.addEventListener("submit",//submitListener
