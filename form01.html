@@ -5,17 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form 01</title>
+    <script src="form01.js" defer></script>
   </head>
   <body>
     <h1>Form 01</h1>
-    <form
-      action="200.131.178.168/dados.php"
-      method="post"
-      id="form01"
-      name="exm01"
-    >
-      <input name="cor" />
-      <input name="enviar" />
+
+    <form id="form01" name="exm01">
+      <!-- </form> action="200.131.178.168/dados.php" -->
+      <!-- method="post" -->
+      <div>
+        <label for="cor">Cor </label>
+        <input id="cor " name="cor" placeholder="Digite um Cor" />
+      </div>
+      <div>
+        <label for="altura">Altura </label>
+        <input id="altura " name="altura" placeholder="Digite um Altura" />
+      </div>
+      <div>
+        <label for="cor">Largura </label>
+        <input id="largura " name="Largura" placeholder="Digite um Largura" />
+      </div>
+      <div>
+        <input type="submit" value="Envia" />
+        <input type="reset" value="Redefinir" />
+      </div>
     </form>
   </body>
 </html>
